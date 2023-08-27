@@ -21,7 +21,6 @@ function FormComponent({ onFormChange, onSubmit }) {
     setQuestion("");
     setOptions([]);
     onFormChange({
-      // <-- Clear the data passed to the preview
       question: "",
       options: [],
     });

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import FormComponent from "../components/FormComponent";
 import PreviewComponent from "../components/PreviewComponent";
-import SubmittedQuestionComponent from "../components/SubmittedQuestionComponent"; // Make sure to import the new component
+import SubmittedQuestionComponent from "../components/SubmittedQuestionComponent";
 import axios from "axios";
 function HomePage() {
   const [questionData, setQuestionData] = useState({
@@ -24,7 +24,7 @@ function HomePage() {
     try {
       for (let question of questionsArray) {
         const response = await axios.post(
-          "http://localhost:5000/api/worksheets",
+          "http://beautiful-seal-hoodie.cyclic.cloud/api/worksheets",
           question
         );
         console.log(
