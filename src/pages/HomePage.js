@@ -24,7 +24,7 @@ function HomePage() {
     try {
       for (let question of questionsArray) {
         const response = await axios.post(
-          "http://beautiful-seal-hoodie.cyclic.cloud/api/worksheets",
+          "https://beautiful-seal-hoodie.cyclic.cloud/api/worksheets",
           question
         );
         console.log(

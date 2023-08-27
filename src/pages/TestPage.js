@@ -7,7 +7,7 @@ function TestPage() {
   const handleGetQuestions = async () => {
     try {
       const response = await axios.get(
-        "http://beautiful-seal-hoodie.cyclic.cloud/api/worksheets"
+        "https://beautiful-seal-hoodie.cyclic.cloud/api/worksheets"
       );
       setQuestions(response.data);
     } catch (error) {
