@@ -44,7 +44,7 @@ function HomePage() {
   useEffect(() => {
     const clearDB = async () => {
       try {
-        await axios.delete("http://localhost:5000/api/worksheets/clear");
+        await axios.delete("https://localhost:5000/api/worksheets/clear");
         console.log("Database cleared");
       } catch (error) {
         console.error("Error clearing database:", error);
