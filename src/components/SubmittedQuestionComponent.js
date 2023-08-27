@@ -27,8 +27,8 @@ function SubmittedQuestionComponent({ data, onUpdate }) {
   };
 
   return (
-    <div className="mb-4 p-4 border rounded">
-      <p className="bg-purple-700 w-4/5 px-2.5 py-5 rounded-[1.125rem_1.125rem_1.125rem_0] break-words sm:w-3/5 lg:w-1/2">
+    <div className="mb-4 p-4 pl-3 border rounded">
+      <p className="bg-[#595967] w-4/5 px-2.5 py-5 rounded-[1.125rem] mb-5 break-words sm:w-3/5 lg:w-1/5">
         {question}
       </p>
       <ul>
@@ -40,7 +40,7 @@ function SubmittedQuestionComponent({ data, onUpdate }) {
               onChange={(e) =>
                 handleOptionEdit(index, { ...option, option: e.target.value })
               }
-              className="p-2 border rounded flex-grow"
+              className=" bg-[#A1A2BA] p-4 mr-3 w-fit border-0 break-words mb-4 rounded-full text-black "
             />
             <input
               type="checkbox"

@@ -69,7 +69,7 @@ function HomePage() {
           />
         </div>
       </div>
-      <div className="mt-8">
+      <div className="mt-8 ml-3">
         <h2 className="font-bold mb-4">Submitted Questions:</h2>
         {questionsArray.map((q, qIndex) => (
           <SubmittedQuestionComponent
@@ -83,7 +83,7 @@ function HomePage() {
       </div>
       <button
         onClick={handleSave}
-        className="mt-4 bg-blue-500 text-white p-2 rounded"
+        className="mt-4 ml-3 bg-blue-500 text-white p-2 rounded"
       >
         Save Questions
       </button>

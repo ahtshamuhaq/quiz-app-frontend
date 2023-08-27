@@ -7,8 +7,8 @@ import "./App.css"; // Ensure you have Tailwind classes imported in this file
 function App() {
   return (
     <Router>
-      <div>
-        <nav className="p-4">
+      <div className="bg-[#404258] min-h-screen">
+        <nav className="p-4 bg-slate-600">
           <Link to="/" className="mr-4">
             Home
           </Link>
